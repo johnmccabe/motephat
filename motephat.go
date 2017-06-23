@@ -15,8 +15,8 @@ import (
 	"github.com/alexellis/rpi"
 )
 
-const DATPin int = 10
-const CLKPin int = 11
+const DAT int = 10
+const CLK int = 11
 
 var CHANNEL_PINS = [...]int{8, 7, 25, 24}
 
@@ -121,8 +121,8 @@ func selectChannel(c int) {
 // Setup initializes GPIO via WiringPi base library.
 func (m *Mote) Setup() {
 	rpi.WiringPiSetup()
-	rpi.PinMode(rpi.GpioToPin(DATPin), rpi.OUTPUT)
-	rpi.PinMode(rpi.GpioToPin(CLKPin), rpi.OUTPUT)
+	rpi.PinMode(rpi.GpioToPin(DAT), rpi.OUTPUT)
+	rpi.PinMode(rpi.GpioToPin(CLK), rpi.OUTPUT)
 	for x := 0; x < NumChannels; x++ {
 		rpi.PinMode(rpi.GpioToPin(CHANNEL_PINS[x]), rpi.OUTPUT)
 	}
@@ -154,10 +154,10 @@ func (m *Mote) Show() {
 
 // pulse sends a pulse through the DAT/CLK pins
 func pulse(pulses int) {
-	rpi.DigitalWrite(rpi.GpioToPin(DATPin), 0)
+	rpi.DigitalWrite(rpi.GpioToPin(DAT), 0)
 	for i := 0; i < pulses; i++ {
-		rpi.DigitalWrite(rpi.GpioToPin(CLKPin), 1)
-		rpi.DigitalWrite(rpi.GpioToPin(CLKPin), 0)
+		rpi.DigitalWrite(rpi.GpioToPin(CLK), 1)
+		rpi.DigitalWrite(rpi.GpioToPin(CLK), 0)
 	}
 }
 
@@ -174,9 +174,9 @@ func sof() {
 func writeByte(val int) {
 	for i := 0; i < 8; i++ {
 		// 0b10000000 = 128
-		rpi.DigitalWrite(rpi.GpioToPin(DATPin), val&128)
-		rpi.DigitalWrite(rpi.GpioToPin(CLKPin), 1)
+		rpi.DigitalWrite(rpi.GpioToPin(DAT), val&128)
+		rpi.DigitalWrite(rpi.GpioToPin(CLK), 1)
 		val = val << 1
-		rpi.DigitalWrite(rpi.GpioToPin(CLKPin), 0)
+		rpi.DigitalWrite(rpi.GpioToPin(CLK), 0)
 	}
 }
