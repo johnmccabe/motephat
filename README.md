@@ -5,9 +5,9 @@
 ![Mote](go-mote-phat-logo.png)
 Buy the Mote PHAT & accessories here: https://shop.pimoroni.com/products/mote-phat
 
-If you have a non-PHAT Mote go here: https://github.com/johnmccabe/mote
+This repo contains a port of the [Pimoroni `mote-phat` library](https://github.com/pimoroni/mote-phat) from Python to Go, it also borrows heavily from @alexellis's [`blinkt_go` library](https://github.com/alexellis/blinkt_go). It has been verified to work on Raspberry Pi 3 (Raspbian). Do let me know if you run on a different platform.
 
-This library is based on both the Pimoroni Python [`mote-phat` library](https://github.com/pimoroni/mote-phat), and @alexellis's [`blinkt_go` library](https://github.com/alexellis/blinkt_go).
+If you have a non-PHAT Mote go here: https://github.com/johnmccabe/mote
 
 **WARNING THIS IS WORK IN PROGRESS, ISSUES/PULL REQUESTS STILL WELCOME THOUGH**
 ![WIP](http://i.imgur.com/vWBepKi.gif)
