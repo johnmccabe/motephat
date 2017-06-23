@@ -1,7 +1,7 @@
 /*
 Package motephat represents a connected Pimoroni Mote Phat device, communicating over GPIO.
 
-It allows you to configure the 4 channels and set individual pixels, see the `examples` subdirectory for soem demo applications using the library.
+It allows you to configure the 4 channels and set individual pixels, see the `examples` subdirectory for some demo applications using the library.
 
 It is a port of the Pimoroni Mote Python library (https://github.com/pimoroni/mote-phat), and is based on @alexellis' Blinkt Go library (https://github.com/alexellis/blinkt_go)
 
