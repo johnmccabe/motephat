@@ -1,0 +1,10 @@
+hash: 020fb58854577bbbe0c8f20bd8ae6821abdf422be42c52dc01925b891132a63d
+updated: 2017-06-21T02:07:12.088830559+01:00
+imports:
+- name: github.com/alexellis/rpi
+  version: ab6a4e79f0bd3f4f4caaa6b95e952dfae1b58bb1
+- name: github.com/rogpeppe/rog-go
+  version: f57ad5e24ab7813942c045f86eda1066eb969e98
+  subpackages:
+  - exp/callback
+testImports: []

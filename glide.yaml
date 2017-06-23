@@ -1,0 +1,3 @@
+package: github.com/johnmccabe/motephat
+import:
+- package: github.com/alexellis/rpi

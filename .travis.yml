@@ -1,0 +1,11 @@
+language: go
+
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y wiringpi
+
+go:
+  - 1.8.x
+
+script:
+  - make test
