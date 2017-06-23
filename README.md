@@ -5,6 +5,8 @@
 ![Mote](go-mote-phat-logo.png)
 Buy the Mote PHAT & accessories here: https://shop.pimoroni.com/products/mote-phat
 
+If you have a non-PHAT Mote go here: https://github.com/johnmccabe/mote
+
 This library is based on both the Pimoroni Python [`mote-phat` library](https://github.com/pimoroni/mote-phat), and @alexellis's [`blinkt_go` library](https://github.com/alexellis/blinkt_go).
 
 **WARNING THIS IS WORK IN PROGRESS, ISSUES/PULL REQUESTS STILL WELCOME THOUGH**
