@@ -5,6 +5,9 @@
 ![Mote](go-mote-phat-logo.png)
 Buy the Mote PHAT & accessories here: https://shop.pimoroni.com/products/mote-phat
 
+**WARNING THIS IS WORK IN PROGRESS, ISSUES/PULL REQUESTS STILL WELCOME THOUGH**
+![WIP](http://i.imgur.com/vWBepKi.gif)
+
 # Prerequisites
 
 You should have Go version 1.8+ installed and your `GOPATH` configured.
